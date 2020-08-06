@@ -12,8 +12,14 @@ let package = Package(
             name: "TODO",
             targets: ["TODO"]),
         
+        // DEPRECATED: Does not play nice with App Store requirements
         .library(
             name: "TODO_dynamic",
+            type: .dynamic,
+            targets: ["TODO"]),
+        
+        .library(
+            name: "TodoDynamic",
             type: .dynamic,
             targets: ["TODO"]),
     ],
